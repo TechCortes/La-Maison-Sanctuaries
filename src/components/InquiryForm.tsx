@@ -15,9 +15,7 @@ const schema = z.object({
     .trim()
     .email("Please enter a valid email")
     .max(255),
-  interest: z.enum(["Membership", "Investor", "Press", "Other"], {
-    errorMap: () => ({ message: "Please select an interest" }),
-  }),
+  interest: z.enum(["Membership", "Investor", "Press", "Other"]),
   message: z
     .string()
     .trim()
