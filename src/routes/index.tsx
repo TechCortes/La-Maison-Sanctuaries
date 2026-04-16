@@ -1,26 +1,389 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { motion } from "framer-motion";
+import { FadeIn } from "@/components/FadeIn";
+import { InquirySection } from "@/components/InquirySection";
+
+import lmLogo from "@/assets/lm-logo.jpg";
+import hallway from "@/assets/hallway.jpg";
+import interiorTapestry from "@/assets/interior-tapestry.jpg";
+import diningRoom from "@/assets/dining-room.jpg";
+import diningStill from "@/assets/dining-still.jpg";
+import courtyard from "@/assets/courtyard.jpg";
+import italy from "@/assets/italy.jpg";
+import uk from "@/assets/uk.jpg";
+import foundersBg from "@/assets/founders-bg.jpg";
 
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "La Maison — Private Design Sanctuaries" },
+      {
+        name: "description",
+        content:
+          "A one-to-one design sanctuary where deeply private interiors double as living showrooms. By invitation.",
+      },
+      { property: "og:title", content: "La Maison — Private Design Sanctuaries" },
+      {
+        property: "og:description",
+        content:
+          "Private members' design sanctuaries. Maison Sainte-Florence is the flagship in Bordeaux's Saint-Émilion.",
+      },
+      { property: "og:image", content: lmLogo },
+      { name: "twitter:image", content: lmLogo },
+    ],
+  }),
+  component: LandingPage,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+const pillars = [
+  {
+    n: "01",
+    title: "Design & Art of Living",
+    body: "Curated interiors authored by master designers, conceived as authored environments rather than catalogs.",
+  },
+  {
+    n: "02",
+    title: "Experiential Luxury",
+    body: "Private dinners, atelier visits, and quietly orchestrated gatherings — luxury rendered as occasion.",
+  },
+  {
+    n: "03",
+    title: "Wellness & Restoration",
+    body: "Bespoke programs of rest, treatment, and seasonal cuisine grounded in the rhythm of the land.",
+  },
+  {
+    n: "04",
+    title: "The Living Showroom",
+    body: "Every object, fabric, and finish is acquirable — the Maison itself is the sample book.",
+  },
+  {
+    n: "05",
+    title: "Sustainability",
+    body: "Restoration over replacement. Provenance over novelty. A long view of the houses we keep.",
+  },
+];
+
+const founders = [
+  {
+    name: "Lauren Lozano Ziol",
+    line: "Award-winning interior designer known for layered, deeply personal European-inflected rooms.",
+  },
+  {
+    name: "Michelle Jolas",
+    line: "Atelier and antiques principal, with two decades of provenance work across Bordeaux and Paris.",
+  },
+  {
+    name: "Holly-Mae Post",
+    line: "Membership and hospitality lead, formerly with leading London private clubs.",
+  },
+];
+
+function LandingPage() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div>
+      {/* HERO */}
+      <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-wine">
+        <div className="absolute inset-0">
+          <img
+            src={hallway}
+            alt="A long corridor of hand-painted panels at La Maison"
+            className="h-full w-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-wine/70 via-wine/50 to-wine/90" />
+        </div>
+
+        <div className="relative mx-auto w-full max-w-[1400px] px-6 py-32 md:px-10 md:py-48">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
+            className="max-w-3xl"
+          >
+            <p className="text-[0.72rem] uppercase tracking-[0.42em] text-bone/70">
+              Maison · Sainte-Florence · Bordeaux
+            </p>
+            <h1 className="mt-8 font-display text-[clamp(3rem,9vw,7.5rem)] leading-[0.95] text-bone">
+              La Maison.
+              <br />
+              <em className="font-light italic text-bone/85">
+                Private design sanctuaries.
+              </em>
+            </h1>
+            <p className="mt-10 max-w-xl text-lg leading-relaxed text-bone/80">
+              A one-to-one design sanctuary where deeply private interiors
+              double as living showrooms — curated for those who value trust,
+              authorship, and considered luxury.
+            </p>
+            <div className="mt-14 flex flex-wrap items-center gap-8">
+              <a
+                href="#inquire"
+                className="group inline-flex items-center gap-4 border border-bone/80 px-8 py-4 text-xs uppercase tracking-[0.28em] text-bone transition-all hover:bg-bone hover:text-wine"
+              >
+                Request Introduction
+                <span className="inline-block h-px w-6 bg-bone transition-all group-hover:w-12 group-hover:bg-wine" />
+              </a>
+              <Link
+                to="/maison-sainte-florence"
+                className="text-xs uppercase tracking-[0.28em] text-bone/70 underline-offset-8 hover:text-bone hover:underline"
+              >
+                Visit the Flagship →
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2, duration: 1.5 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center text-[0.62rem] uppercase tracking-[0.5em] text-bone/50"
+        >
+          Scroll
+        </motion.div>
+      </section>
+
+      {/* CONCEPT */}
+      <section className="relative py-28 md:py-44">
+        <div className="mx-auto max-w-[1400px] px-6 md:px-10">
+          <div className="grid gap-16 md:grid-cols-[1.1fr_1fr] md:gap-24">
+            <FadeIn>
+              <p className="eyebrow">The Concept</p>
+              <h2 className="mt-6 font-display text-5xl leading-[1.05] text-ink md:text-7xl">
+                <em className="italic text-wine">"The market is not only ready —</em>
+                <br />
+                it is quietly yearning for a concept like La Maison."
+              </h2>
+              <div className="mt-10 max-w-lg space-y-6 text-base leading-relaxed text-ink/75">
+                <p>
+                  Today's discerning individuals crave intimacy, curation, and
+                  privacy. Private members' clubs are becoming the new standard
+                  in lifestyle and real estate value.
+                </p>
+                <p>
+                  La Maison answers that appetite with houses authored as
+                  living showrooms — every textile, antique, and wall surface
+                  acquirable, every visit choreographed in private.
+                </p>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.2}>
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <img
+                  src={interiorTapestry}
+                  alt="Candlelit interior with classical statuary and damask seating"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* PILLARS */}
+      <section className="border-t border-rule/40 bg-parchment/40 py-28 md:py-36">
+        <div className="mx-auto max-w-[1400px] px-6 md:px-10">
+          <FadeIn>
+            <p className="eyebrow">Five Brand Pillars</p>
+            <h2 className="mt-6 max-w-2xl font-display text-5xl leading-[1.05] text-ink md:text-6xl">
+              The architecture of a quieter luxury.
+            </h2>
+          </FadeIn>
+
+          <div className="mt-20 grid gap-px bg-rule/60 md:grid-cols-3">
+            {pillars.map((p, i) => (
+              <FadeIn
+                key={p.n}
+                delay={i * 0.08}
+                className="bg-parchment/40 p-10 md:p-12"
+              >
+                <p className="font-display text-4xl italic text-wine/70">
+                  {p.n}
+                </p>
+                <h3 className="mt-6 font-display text-2xl text-ink">
+                  {p.title}
+                </h3>
+                <p className="mt-4 text-sm leading-relaxed text-ink/70">
+                  {p.body}
+                </p>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FLAGSHIP TEASER */}
+      <section className="relative py-28 md:py-44">
+        <div className="mx-auto max-w-[1400px] px-6 md:px-10">
+          <div className="grid items-center gap-14 md:grid-cols-2 md:gap-24">
+            <FadeIn>
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <img
+                  src={diningRoom}
+                  alt="Hand-painted chinoiserie dining room at Maison Sainte-Florence"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.15}>
+              <p className="eyebrow">Flagship · Saint-Émilion</p>
+              <h2 className="mt-6 font-display text-5xl leading-[1.05] text-ink md:text-6xl">
+                Maison
+                <br />
+                <em className="italic text-wine">Sainte-Florence.</em>
+              </h2>
+              <p className="mt-6 max-w-md text-base leading-relaxed text-ink/75">
+                Set along the Dordogne River and within the historic vineyards
+                of Saint-Émilion, the flagship is the inaugural Members'
+                Designer Showhouse — a living atelier conceived by Lozano Jolas
+                Interiors.
+              </p>
+              <Link
+                to="/maison-sainte-florence"
+                className="mt-10 inline-flex items-center gap-4 border border-wine bg-bone px-8 py-4 text-xs uppercase tracking-[0.28em] text-wine transition-all hover:bg-wine hover:text-bone"
+              >
+                Enter the Flagship
+                <span className="inline-block h-px w-6 bg-wine transition-all group-hover:w-12" />
+              </Link>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* INVESTMENT TEASER */}
+      <section className="relative overflow-hidden bg-wine py-28 text-bone md:py-36">
+        <img
+          src={diningStill}
+          alt=""
+          aria-hidden
+          className="absolute inset-0 h-full w-full object-cover opacity-25"
+        />
+        <div className="absolute inset-0 bg-wine/60" />
+        <div className="relative mx-auto max-w-[1400px] px-6 md:px-10">
+          <div className="grid gap-12 md:grid-cols-[1.4fr_1fr] md:items-end md:gap-24">
+            <FadeIn>
+              <p className="text-[0.7rem] uppercase tracking-[0.32em] text-bone/70">
+                Investment
+              </p>
+              <h2 className="mt-6 font-display text-5xl leading-[1.05] md:text-6xl">
+                A long-form opportunity in
+                <em className="italic text-bone/90"> private living.</em>
+              </h2>
+            </FadeIn>
+            <FadeIn delay={0.15}>
+              <p className="text-base leading-relaxed text-bone/85">
+                Acquired and construction-ready. A USD $3M raise unlocks the
+                Sainte-Florence flagship, with revenue beginning 2027 and IRR
+                projected at 15.8–18.5%.
+              </p>
+              <Link
+                to="/investment"
+                className="mt-10 inline-flex items-center gap-4 border border-bone/80 px-8 py-4 text-xs uppercase tracking-[0.28em] text-bone transition-all hover:bg-bone hover:text-wine"
+              >
+                Investment Overview
+              </Link>
+            </FadeIn>
+          </div>
+
+          <div className="mt-20 grid grid-cols-2 gap-px bg-bone/15 md:grid-cols-4">
+            {[
+              ["8%", "Fixed annual return"],
+              ["25%", "Upside participation"],
+              ["18.5%", "IRR potential"],
+              ["2027", "Revenue commencement"],
+            ].map(([v, l]) => (
+              <div key={l} className="bg-wine p-8 md:p-10">
+                <p className="font-display text-5xl text-bone">{v}</p>
+                <p className="mt-3 text-[0.7rem] uppercase tracking-[0.24em] text-bone/70">
+                  {l}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FUTURE OPENINGS */}
+      <section className="border-t border-rule/40 py-28 md:py-36">
+        <div className="mx-auto max-w-[1400px] px-6 md:px-10">
+          <FadeIn>
+            <p className="eyebrow">Portfolio Pipeline</p>
+            <h2 className="mt-6 max-w-xl font-display text-5xl leading-[1.05] text-ink md:text-6xl">
+              Houses
+              <em className="italic text-wine"> in waiting.</em>
+            </h2>
+          </FadeIn>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2">
+            {[
+              { img: italy, label: "Italy", note: "Tuscan hill village · 2028" },
+              { img: uk, label: "United Kingdom", note: "London townhouse · 2029" },
+            ].map((o, i) => (
+              <FadeIn key={o.label} delay={i * 0.1}>
+                <div className="group relative overflow-hidden">
+                  <div className="aspect-[16/10] overflow-hidden">
+                    <img
+                      src={o.img}
+                      alt={o.label}
+                      className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex items-baseline justify-between border-t border-rule/40 py-5">
+                    <p className="font-display text-2xl text-ink">{o.label}</p>
+                    <p className="text-[0.7rem] uppercase tracking-[0.24em] text-ink/60">
+                      {o.note}
+                    </p>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FOUNDERS */}
+      <section className="relative overflow-hidden border-t border-rule/40 py-28 md:py-36">
+        <img
+          src={foundersBg}
+          alt=""
+          aria-hidden
+          className="absolute right-0 top-0 hidden h-full w-1/2 object-cover opacity-25 md:block"
+        />
+        <div className="absolute inset-0 hidden bg-gradient-to-r from-bone via-bone/95 to-bone/30 md:block" />
+        <div className="relative mx-auto max-w-[1400px] px-6 md:px-10">
+          <FadeIn>
+            <p className="eyebrow">The Principals</p>
+            <h2 className="mt-6 max-w-2xl font-display text-5xl leading-[1.05] text-ink md:text-6xl">
+              Three voices,
+              <em className="italic text-wine"> one Maison.</em>
+            </h2>
+          </FadeIn>
+          <div className="mt-16 grid gap-10 md:grid-cols-3">
+            {founders.map((f, i) => (
+              <FadeIn key={f.name} delay={i * 0.1}>
+                <div className="border-t border-wine/40 pt-6">
+                  <p className="font-display text-2xl text-ink">{f.name}</p>
+                  <p className="mt-4 text-sm leading-relaxed text-ink/70">
+                    {f.line}
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* COURTYARD INTERLUDE */}
+      <section className="relative h-[80vh] overflow-hidden">
+        <img
+          src={courtyard}
+          alt="An ivy-clad courtyard threshold leading into Maison Sainte-Florence"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-bone via-transparent to-transparent" />
+      </section>
+
+      <InquirySection />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }

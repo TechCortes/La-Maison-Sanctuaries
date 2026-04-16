@@ -1,0 +1,73 @@
+import { Link } from "@tanstack/react-router";
+
+const principals = [
+  {
+    name: "Lauren Lozano Ziol",
+    role: "Co-Founder · Design Direction",
+    email: "lauren@lamaison.studio",
+    phone: "+1 713 555 0142",
+  },
+  {
+    name: "Michelle Jolas",
+    role: "Co-Founder · Atelier",
+    email: "michelle@lamaison.studio",
+    phone: "+33 5 57 55 0184",
+  },
+  {
+    name: "Holly-Mae Post",
+    role: "Co-Founder · Membership",
+    email: "holly@lamaison.studio",
+    phone: "+44 20 7946 0288",
+  },
+];
+
+export function SiteFooter() {
+  return (
+    <footer className="border-t border-rule/60 bg-bone">
+      <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10">
+        <div className="grid gap-12 md:grid-cols-[1.2fr_2fr]">
+          <div>
+            <p className="font-display text-3xl text-wine">La Maison</p>
+            <p className="mt-3 text-sm text-ink/60">
+              Private Design Sanctuaries.
+              <br />
+              By invitation.
+            </p>
+            <div className="mt-8 flex gap-6 text-[0.7rem] uppercase tracking-[0.24em] text-ink/60">
+              <Link to="/" className="hover:text-wine">
+                Concept
+              </Link>
+              <Link to="/maison-sainte-florence" className="hover:text-wine">
+                Flagship
+              </Link>
+              <Link to="/investment" className="hover:text-wine">
+                Investment
+              </Link>
+            </div>
+          </div>
+          <div className="grid gap-8 sm:grid-cols-3">
+            {principals.map((p) => (
+              <div key={p.name}>
+                <p className="text-[0.7rem] uppercase tracking-[0.24em] text-wine">
+                  {p.role}
+                </p>
+                <p className="mt-2 font-display text-xl text-ink">{p.name}</p>
+                <a
+                  href={`mailto:${p.email}`}
+                  className="mt-3 block text-sm text-ink/70 hover:text-wine"
+                >
+                  {p.email}
+                </a>
+                <p className="text-sm text-ink/50">{p.phone}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mt-16 flex flex-col items-start justify-between gap-3 border-t border-rule/40 pt-6 text-xs text-ink/50 md:flex-row md:items-center">
+          <p>© {new Date().getFullYear()} La Maison. All rights reserved.</p>
+          <p className="italic">Maison Sainte-Florence · Bordeaux · Saint-Émilion</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
