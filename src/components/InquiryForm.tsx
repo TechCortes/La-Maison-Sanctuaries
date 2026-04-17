@@ -25,11 +25,7 @@ const schema = z.object({
 
 type FormValues = z.infer<typeof schema>;
 
-const recipients = [
-  "lauren@lamaison.studio",
-  "michelle@lamaison.studio",
-  "holly@lamaison.studio",
-].join(",");
+const recipients = "Holly-Mae@postproj.com";
 
 export function InquiryForm() {
   const [submitting, setSubmitting] = useState(false);

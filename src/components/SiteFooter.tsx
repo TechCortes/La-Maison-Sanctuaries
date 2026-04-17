@@ -4,20 +4,15 @@ const principals = [
   {
     name: "Lauren Lozano Ziol",
     role: "Co-Founder · Design Direction",
-    email: "lauren@lamaison.studio",
-    phone: "+1 713 555 0142",
   },
   {
     name: "Michelle Jolas",
     role: "Co-Founder · Atelier",
-    email: "michelle@lamaison.studio",
-    phone: "+33 5 57 55 0184",
   },
   {
     name: "Holly-Mae Post",
-    role: "Co-Founder · Membership",
-    email: "holly@lamaison.studio",
-    phone: "+44 20 7946 0288",
+    role: "Partner & Memberships",
+    email: "Holly-Mae@postproj.com",
   },
 ];
 
@@ -52,13 +47,14 @@ export function SiteFooter() {
                   {p.role}
                 </p>
                 <p className="mt-2 font-display text-xl text-ink">{p.name}</p>
-                <a
-                  href={`mailto:${p.email}`}
-                  className="mt-3 block text-sm text-ink/70 hover:text-wine"
-                >
-                  {p.email}
-                </a>
-                <p className="text-sm text-ink/50">{p.phone}</p>
+                {p.email && (
+                  <a
+                    href={`mailto:${p.email}`}
+                    className="mt-3 block text-sm text-ink/70 hover:text-wine"
+                  >
+                    {p.email}
+                  </a>
+                )}
               </div>
             ))}
           </div>
