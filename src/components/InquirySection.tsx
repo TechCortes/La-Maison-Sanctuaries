@@ -3,22 +3,9 @@ import { InquiryForm } from "./InquiryForm";
 
 const principals = [
   {
-    name: "Lauren Lozano Ziol",
-    role: "Design Direction",
-    email: "lauren@lamaison.studio",
-    phone: "+1 713 555 0142",
-  },
-  {
-    name: "Michelle Jolas",
-    role: "Atelier",
-    email: "michelle@lamaison.studio",
-    phone: "+33 5 57 55 0184",
-  },
-  {
     name: "Holly-Mae Post",
-    role: "Membership",
-    email: "holly@lamaison.studio",
-    phone: "+44 20 7946 0288",
+    role: "Partner & Memberships",
+    email: "Holly-Mae@postproj.com",
   },
 ];
 
