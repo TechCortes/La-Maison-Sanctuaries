@@ -44,9 +44,8 @@ export function InquirySection() {
                     href={`mailto:${p.email}`}
                     className="mt-1 block text-sm text-ink/70 hover:text-wine"
                   >
-                    {p.email}
+                  {p.email}
                   </a>
-                  <p className="text-sm text-ink/50">{p.phone}</p>
                 </div>
               ))}
             </FadeIn>
