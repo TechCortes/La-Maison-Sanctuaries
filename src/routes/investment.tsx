@@ -177,34 +177,6 @@ function InvestmentPage() {
         </div>
       </section>
 
-      {/* STATUS */}
-      <section className="border-t border-rule/40 bg-wine py-28 text-bone md:py-36">
-        <div className="mx-auto max-w-[1400px] px-6 md:px-10">
-          <FadeIn>
-            <p className="text-[0.7rem] uppercase tracking-[0.32em] text-bone/70">
-              Strategic Investment Status
-            </p>
-            <h2 className="mt-6 max-w-3xl font-display text-5xl leading-[1.05] md:text-6xl">
-              The flagship is
-              <em className="italic"> ready to break ground.</em>
-            </h2>
-          </FadeIn>
-
-          <div className="mt-16 grid gap-px bg-bone/15 md:grid-cols-2 lg:grid-cols-4">
-            {status.map((s, i) => (
-              <FadeIn key={s.k} delay={i * 0.08} className="bg-wine p-8 md:p-10">
-                <p className="text-[0.7rem] uppercase tracking-[0.28em] text-bone/60">
-                  {s.k}
-                </p>
-                <p className="mt-4 font-display text-2xl text-bone md:text-3xl">
-                  {s.v}
-                </p>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* WHY THE MARKET */}
       <section className="py-28 md:py-36">
         <div className="mx-auto grid max-w-[1400px] gap-16 px-6 md:grid-cols-[1fr_1.5fr] md:gap-24 md:px-10">
