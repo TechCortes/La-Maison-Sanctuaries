@@ -70,7 +70,7 @@ const founders = [
   },
   {
     name: "Michelle Jolas",
-    line: "Atelier and antiques principal, with two decades of provenance work across Bordeaux and Paris.",
+    line: "As a co-founder of Lozano Jolas Interiors, Michelle Jolas brings unparalleled skill in graphic and interior design to the table, helping propel Lozano Jolas Interiors to a position as a top interior design firm. Michelle's affection for design spans from the graphic arts to cultivated interiors to worldview photography. Before Lozano Jolas Interiors, she gained experience at top global advertising agencies by managing campaigns for luxury brands including The Peninsula Chicago, Beverly Hills, New York and Hästens Beds. After owning a boutique graphic design and advertising agency for 17 years, she joined forces with Lauren to now share her talent through a keen eye for vintage finds and intriguing photography available for purchase through the Lozano Jolas Interiors.",
   },
   {
     name: "Holly-Mae Post",
