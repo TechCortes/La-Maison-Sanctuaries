@@ -66,10 +66,10 @@ function FlagshipPage() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="mt-10 text-[0.72rem] uppercase tracking-[0.42em] text-bone/70">
-              The Flagship Members' Designer Showhouse
+              The Flagship Members' Experience
             </p>
             <h1 className="mt-6 max-w-3xl font-display text-[clamp(2.6rem,7vw,5.5rem)] leading-[1] text-bone">
-              An authored house on
+              A members' house on
               <em className="italic"> the Dordogne.</em>
             </h1>
           </FadeIn>
