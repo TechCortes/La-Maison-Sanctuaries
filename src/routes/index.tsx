@@ -194,12 +194,14 @@ function LandingPage() {
             </h2>
           </FadeIn>
 
-          <div className="mt-20 flex flex-wrap justify-center gap-px bg-rule/60">
+          <div className="mt-20 grid gap-px bg-rule/60 md:grid-cols-6">
             {pillars.map((p, i) => (
               <FadeIn
                 key={p.n}
                 delay={i * 0.08}
-                className="w-full bg-parchment/40 p-10 md:w-[calc(33.3333%-1px)] md:p-12"
+                className={`bg-parchment/40 p-10 md:p-12 ${
+                  i < 3 ? "md:col-span-2" : "md:col-span-3"
+                }`}
               >
                 <p className="font-display text-4xl italic text-wine/70">
                   {p.n}
