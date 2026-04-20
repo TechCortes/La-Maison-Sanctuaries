@@ -174,7 +174,7 @@ function LandingPage() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={conceptGathering}
-                  alt="Elegant young women enjoying a private gathering in a refined modern-classic salon"
+                  alt="Diverse group of smiling young women — Black, Asian, and White — sharing a joyful moment in a refined modern-classic salon"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
