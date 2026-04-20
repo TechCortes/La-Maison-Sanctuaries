@@ -11,6 +11,8 @@ import diningStill from "@/assets/dining-still.jpg";
 import courtyard from "@/assets/courtyard.jpg";
 import italy from "@/assets/italy.jpg";
 import uk from "@/assets/uk.jpg";
+import hamptons from "@/assets/hamptons.jpg";
+import caribbean from "@/assets/caribbean.jpg";
 import foundersBg from "@/assets/founders-bg.jpg";
 
 export const Route = createFileRoute("/")({
