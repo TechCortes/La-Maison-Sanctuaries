@@ -74,7 +74,7 @@ const founders = [
   },
   {
     name: "Holly-Mae Post",
-    line: "Membership and hospitality lead, formerly with leading London private clubs.",
+    line: "Holly-Mae Post began her professional journey in FinTech, joining the mergers and acquisitions team of an Indian-owned financial technology firm. Motivated by the brilliance and ambition around her, Holly-Mae pursued a degree at New York University in Sustainability, Economics, and Business Leadership, followed by a specialized certification in Energy. During this transformative period, she made a bold industry shift — first into luxury retail with one of America's most iconic fashion houses, and later into high-end construction, where she discovered her true calling. Today, as an owner's representative, Holly-Mae empowers clients to bring their visions to life, delivering beautiful, complex projects around the world that reflect architectural excellence and the values of creativity, collaboration, and purpose that define her brand.",
   },
 ];
 
