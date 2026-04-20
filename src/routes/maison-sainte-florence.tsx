@@ -18,7 +18,7 @@ export const Route = createFileRoute("/maison-sainte-florence")({
       {
         name: "description",
         content:
-          "The flagship Members' Designer Showhouse on the Dordogne, within Saint-Émilion's historic vineyards.",
+          "The flagship private members' experience on the Dordogne, within Saint-Émilion's historic vineyards.",
       },
       {
         property: "og:title",
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/maison-sainte-florence")({
       {
         property: "og:description",
         content:
-          "A discreetly connected riverside retreat in Bordeaux — the inaugural Members' Designer Showhouse.",
+          "A private members' experience along the Dordogne — the inaugural La Maison Designer Showhouse in Bordeaux.",
       },
       { property: "og:image", content: exterior },
       { name: "twitter:image", content: exterior },
