@@ -29,16 +29,6 @@ export const Route = createFileRoute("/maison-sainte-florence")({
   }),
   component: FlagshipPage,
 });
-
-const gallery = [
-  { src: staircase, alt: "Wrought-iron spiral staircase rising through the entrance hall", caption: "The Staircase" },
-  { src: courtyard, alt: "Ivy-arched courtyard threshold", caption: "The Courtyard" },
-  { src: diningRoom, alt: "Hand-painted chinoiserie dining room", caption: "The Dining Room" },
-  { src: bedroom, alt: "Restored ceiling reliefs in a guest suite", caption: "The Suites" },
-  { src: diningStill, alt: "Still life of lemons and copper in the kitchen", caption: "The Kitchen" },
-  { src: exterior, alt: "Arched front doors opening to the gardens", caption: "The Threshold" },
-];
-
 function FlagshipPage() {
   return (
     <div>
