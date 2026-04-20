@@ -234,9 +234,9 @@ function LandingPage() {
               </h2>
               <p className="mt-6 max-w-md text-base leading-relaxed text-ink/75">
                 Set along the Dordogne River and within the historic vineyards
-                of Saint-Émilion, the flagship is the inaugural Members'
-                Designer Showhouse — a living atelier conceived by Lozano Jolas
-                Interiors.
+                of Saint-Émilion, the flagship is the inaugural private
+                members' experience — a living atelier conceived by Lozano
+                Jolas Interiors.
               </p>
               <Link
                 to="/maison-sainte-florence"
