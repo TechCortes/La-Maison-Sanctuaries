@@ -6,6 +6,7 @@ import { InquirySection } from "@/components/InquirySection";
 import lmLogo from "@/assets/lm-logo.jpg";
 import hallway from "@/assets/hallway.jpg";
 import interiorTapestry from "@/assets/interior-tapestry.jpg";
+import conceptGathering from "@/assets/concept-gathering.jpg";
 import diningRoom from "@/assets/dining-room.jpg";
 import diningStill from "@/assets/dining-still.jpg";
 import courtyard from "@/assets/courtyard.jpg";
@@ -172,8 +173,9 @@ function LandingPage() {
             <FadeIn delay={0.2}>
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
-                  src={interiorTapestry}
-                  alt="Candlelit interior with classical statuary and damask seating"
+                  src={conceptGathering}
+                  alt="Elegant young women enjoying a private gathering in a refined modern-classic salon"
+                  loading="lazy"
                   className="h-full w-full object-cover"
                 />
               </div>
