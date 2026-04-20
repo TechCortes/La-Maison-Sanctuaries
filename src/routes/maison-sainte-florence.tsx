@@ -80,19 +80,20 @@ function FlagshipPage() {
       <section className="py-28 md:py-36">
         <div className="mx-auto grid max-w-[1400px] gap-16 px-6 md:grid-cols-[1fr_1.5fr] md:gap-24 md:px-10">
           <FadeIn>
-            <p className="eyebrow">A Living Atelier</p>
+            <p className="eyebrow">A Private Members' Experience</p>
           </FadeIn>
           <FadeIn delay={0.15}>
             <p className="font-display text-3xl leading-snug text-ink md:text-4xl">
               Maison Sainte-Florence is the inaugural La Maison house — a
-              private residence reimagined as a living showroom, with every
-              surface, antique, and textile authored by Lozano Jolas Interiors
-              and acquirable in residence.
+              private members' experience conceived as a living showroom, with
+              every surface, antique, and textile authored by Lozano Jolas
+              Interiors and acquirable in residence.
             </p>
             <p className="mt-8 max-w-xl text-base leading-relaxed text-ink/70">
               Members are received by appointment. The house operates as a
               one-to-one atelier — design consultation, hospitality, and quiet
-              retreat braided into a single experience.
+              retreat braided into a single experience reserved for the
+              membership.
             </p>
           </FadeIn>
         </div>
