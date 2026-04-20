@@ -31,7 +31,7 @@ export const Route = createFileRoute("/maison-sainte-florence")({
 });
 function FlagshipPage() {
   return (
-    <div className="bg-sage">
+    <div className="bg-wine text-bone">
       {/* INTRO */}
       <section className="py-28 md:py-36">
         <div className="mx-auto grid max-w-[1400px] gap-16 px-6 md:grid-cols-[1fr_1.5fr] md:gap-24 md:px-10">
