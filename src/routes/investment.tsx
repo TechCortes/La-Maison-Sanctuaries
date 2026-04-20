@@ -47,13 +47,6 @@ const revenue = [
   "Major Brand Partnerships",
 ];
 
-const status = [
-  { k: "Status", v: "Property acquired & construction-ready" },
-  { k: "Revenue", v: "Commencing 2027" },
-  { k: "Capital sought", v: "USD $3,000,000" },
-  { k: "Hold period", v: "5–7 years" },
-];
-
 function InvestmentPage() {
   return (
     <div>
