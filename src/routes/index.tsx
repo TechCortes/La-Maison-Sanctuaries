@@ -174,7 +174,7 @@ function LandingPage() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={conceptGathering}
-                  alt="Diverse group of smiling young women — Black, Asian, and White — sharing a joyful moment in a refined modern-classic salon"
+                  alt="Elegant modern clubhouse lounge with travertine fireplace, bouclé sofas, and sculptural brass lighting"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
