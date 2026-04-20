@@ -318,10 +318,10 @@ function LandingPage() {
 
           <div className="mt-16 grid gap-8 md:grid-cols-2">
             {[
-              { img: italy, label: "Italy", note: "Tuscan hill village · 2028" },
-              { img: uk, label: "United Kingdom", note: "London townhouse · 2029" },
-              { img: hamptons, label: "United States", note: "The Hamptons · 2030" },
-              { img: caribbean, label: "The Caribbean", note: "Private island estate · 2031" },
+              { img: italy, label: "Italy" },
+              { img: uk, label: "United Kingdom" },
+              { img: hamptons, label: "United States" },
+              { img: caribbean, label: "The Caribbean" },
             ].map((o, i) => (
               <FadeIn key={o.label} delay={i * 0.1}>
                 <div className="group relative overflow-hidden">
@@ -332,11 +332,8 @@ function LandingPage() {
                       className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                     />
                   </div>
-                  <div className="flex items-baseline justify-between border-t border-rule/40 py-5">
+                  <div className="border-t border-rule/40 py-5">
                     <p className="font-display text-2xl text-ink">{o.label}</p>
-                    <p className="text-[0.7rem] uppercase tracking-[0.24em] text-ink/60">
-                      {o.note}
-                    </p>
                   </div>
                 </div>
               </FadeIn>
