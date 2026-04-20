@@ -4,7 +4,7 @@ import { InquiryForm } from "./InquiryForm";
 const principals = [
   {
     name: "Holly-Mae Post",
-    role: "Partner & Memberships",
+    role: "Managing Partner & Membership",
     email: "Holly-Mae@postproj.com",
   },
 ];
