@@ -48,34 +48,6 @@ const gallery = [
 function FlagshipPage() {
   return (
     <div>
-      {/* HERO */}
-      <section className="relative flex min-h-[100svh] items-end overflow-hidden bg-ink">
-        <img
-          src={exterior}
-          alt="The arched entrance doors of Maison Sainte-Florence opening to the gardens"
-          className="absolute inset-0 h-full w-full object-cover opacity-90"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-ink/40" />
-        <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-24 pt-40 md:px-10 md:pb-32 md:pt-48">
-          <FadeIn>
-            <img
-              src={sfLogo}
-              alt="Maison Sainte-Florence emblem"
-              className="h-32 w-auto brightness-0 invert md:h-40"
-            />
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <p className="mt-10 text-[0.72rem] uppercase tracking-[0.42em] text-bone/70">
-              The Flagship Members' Experience
-            </p>
-            <h1 className="mt-6 max-w-3xl font-display text-[clamp(2.6rem,7vw,5.5rem)] leading-[1] text-bone">
-              A members' house on
-              <em className="italic"> the Dordogne.</em>
-            </h1>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* INTRO */}
       <section className="py-28 md:py-36">
         <div className="mx-auto grid max-w-[1400px] gap-16 px-6 md:grid-cols-[1fr_1.5fr] md:gap-24 md:px-10">
