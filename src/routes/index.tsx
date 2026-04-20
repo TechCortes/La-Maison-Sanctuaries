@@ -66,7 +66,7 @@ const pillars = [
 const founders = [
   {
     name: "Lauren Lozano Ziol",
-    line: "Award-winning interior designer known for layered, deeply personal European-inflected rooms.",
+    line: "Lauren Lozano Ziol's extensive experience in interior design, antiques, and art history has gained her recognition across the luxury interior design space, being featured in international publications all over the world including Elle Decor, Country & Town House Interiors, Wall Street Journal, Architectural Digest, and more. With projects around the globe, her passion shines, pulling inspiration from her degrees in both Interior Design and Art History — with an additional year spent studying Art History at University of Oxford. Living in London, Paris, and Chicago, along with her deep portfolio of travels, has helped Lauren refine her eye for history, detail, and cosmopolitan design, as well as inspire her own line of furniture available through the Lozano Jolas Interiors. Lauren is the principal interior designer of the Lozano Jolas Interiors London and Chicago offices.",
   },
   {
     name: "Michelle Jolas",
