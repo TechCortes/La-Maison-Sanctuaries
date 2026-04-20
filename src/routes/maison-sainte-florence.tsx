@@ -107,52 +107,6 @@ function FlagshipPage() {
         </div>
       </section>
 
-      {/* DESIGN INTENT */}
-      <section className="py-28 md:py-36">
-        <div className="mx-auto max-w-[1400px] px-6 md:px-10">
-          <FadeIn>
-            <p className="eyebrow">Design Intent</p>
-            <h2 className="mt-6 max-w-2xl font-display text-5xl leading-[1.05] text-ink md:text-6xl">
-              Six bedrooms,
-              <em className="italic text-wine"> one continuous narrative.</em>
-            </h2>
-          </FadeIn>
-
-          <FadeIn delay={0.15} className="mt-16 overflow-hidden border border-rule/40 bg-bone p-4">
-            <img
-              src={floorplan}
-              alt="Architectural floor plan study of the bedroom level by ButonCipel architectes"
-              className="h-full w-full object-contain"
-            />
-          </FadeIn>
-
-          <div className="mt-20 grid gap-px bg-rule/40 md:grid-cols-2 lg:grid-cols-3">
-            {gallery.map((g, i) => (
-              <FadeIn
-                key={g.caption}
-                delay={(i % 3) * 0.08}
-                className="group bg-bone"
-              >
-                <div className="aspect-[4/5] overflow-hidden">
-                  <img
-                    src={g.src}
-                    alt={g.alt}
-                    className="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-105"
-                  />
-                </div>
-                <div className="flex items-baseline justify-between p-5">
-                  <p className="font-display text-xl text-ink">{g.caption}</p>
-                  <p className="text-[0.62rem] uppercase tracking-[0.3em] text-ink/50">
-                    {String(i + 1).padStart(2, "0")} / {String(gallery.length).padStart(2, "0")}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
       <section className="border-t border-rule/40 bg-wine py-28 text-bone md:py-36">
         <div className="mx-auto max-w-[1400px] px-6 text-center md:px-10">
           <FadeIn>
