@@ -31,12 +31,12 @@ export const Route = createFileRoute("/maison-sainte-florence")({
 });
 function FlagshipPage() {
   return (
-    <div>
+    <div className="bg-sage">
       {/* INTRO */}
       <section className="py-28 md:py-36">
         <div className="mx-auto grid max-w-[1400px] gap-16 px-6 md:grid-cols-[1fr_1.5fr] md:gap-24 md:px-10">
           <FadeIn>
-            <p className="eyebrow">A Private Members' Experience</p>
+            <p className="eyebrow !text-ink">A Private Members' Experience</p>
           </FadeIn>
           <FadeIn delay={0.15}>
             <p className="font-display text-3xl leading-snug text-ink md:text-4xl">
@@ -45,7 +45,7 @@ function FlagshipPage() {
               every surface, antique, and textile authored by Lozano Jolas
               Interiors and acquirable in residence.
             </p>
-            <p className="mt-8 max-w-xl text-base leading-relaxed text-ink/70">
+            <p className="mt-8 max-w-xl text-base leading-relaxed text-ink/75">
               Members are received by appointment. The house operates as a
               one-to-one atelier — design consultation, hospitality, and quiet
               retreat braided into a single experience reserved for the
@@ -56,16 +56,16 @@ function FlagshipPage() {
       </section>
 
       {/* LOCATION */}
-      <section className="border-t border-rule/40 bg-parchment/40 py-28 md:py-36">
+      <section className="border-t border-ink/15 py-28 md:py-36">
         <div className="mx-auto max-w-[1400px] px-6 md:px-10">
           <div className="grid gap-16 md:grid-cols-2 md:gap-20">
             <FadeIn>
-              <p className="eyebrow">A Discreetly Connected Retreat</p>
+              <p className="eyebrow !text-ink">A Discreetly Connected Retreat</p>
               <h2 className="mt-6 font-display text-5xl leading-[1.05] text-ink md:text-6xl">
                 Saint-Émilion
-                <em className="italic text-wine"> · Bordeaux.</em>
+                <em className="italic text-ink/70"> · Bordeaux.</em>
               </h2>
-              <div className="mt-8 max-w-md space-y-5 text-base leading-relaxed text-ink/75">
+              <div className="mt-8 max-w-md space-y-5 text-base leading-relaxed text-ink/80">
                 <p>
                   The Maison sits in a secluded riverside setting along the
                   Dordogne, balancing rural calm with exceptional connectivity
@@ -79,7 +79,7 @@ function FlagshipPage() {
               </div>
             </FadeIn>
             <FadeIn delay={0.15}>
-              <div className="overflow-hidden border border-rule/40 bg-bone p-4">
+              <div className="overflow-hidden border border-ink/15 bg-bone p-4">
                 <img
                   src={map}
                   alt="Watercolor map of Bordeaux's Rive Gauche and Rive Droite wine regions"
@@ -91,19 +91,19 @@ function FlagshipPage() {
         </div>
       </section>
 
-      <section className="border-t border-rule/40 bg-wine py-28 text-bone md:py-36">
+      <section className="border-t border-ink/15 py-28 md:py-36">
         <div className="mx-auto max-w-[1400px] px-6 text-center md:px-10">
           <FadeIn>
-            <p className="text-[0.7rem] uppercase tracking-[0.32em] text-bone/70">
+            <p className="text-[0.7rem] uppercase tracking-[0.32em] text-ink/70">
               By appointment only
             </p>
-            <h2 className="mx-auto mt-6 max-w-3xl font-display text-5xl leading-[1.05] md:text-6xl">
+            <h2 className="mx-auto mt-6 max-w-3xl font-display text-5xl leading-[1.05] text-ink md:text-6xl">
               <em className="italic">Visits to Maison Sainte-Florence</em> are
               arranged in private correspondence.
             </h2>
             <a
               href="/#inquire"
-              className="mt-12 inline-flex items-center gap-4 border border-bone/80 px-8 py-4 text-xs uppercase tracking-[0.28em] text-bone transition-all hover:bg-bone hover:text-wine"
+              className="mt-12 inline-flex items-center gap-4 border border-ink/80 px-8 py-4 text-xs uppercase tracking-[0.28em] text-ink transition-all hover:bg-ink hover:text-sage"
             >
               Request an introduction
             </a>
