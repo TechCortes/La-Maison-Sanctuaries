@@ -94,10 +94,10 @@ function FlagshipPage() {
       </section>
 
       {/* CTA — keeps the colored background */}
-      <section className="bg-wine py-28 text-bone md:py-36">
+      <section className="bg-sage-deep py-28 text-bone md:py-36">
         <div className="mx-auto max-w-[1400px] px-6 text-center md:px-10">
           <FadeIn>
-            <p className="text-[0.7rem] uppercase tracking-[0.32em] text-bone/70">
+            <p className="text-[0.7rem] uppercase tracking-[0.32em] text-bone/80">
               By appointment only
             </p>
             <h2 className="mx-auto mt-6 max-w-3xl font-display text-5xl leading-[1.05] text-bone md:text-6xl">
@@ -106,7 +106,7 @@ function FlagshipPage() {
             </h2>
             <a
               href="/#inquire"
-              className="mt-12 inline-flex items-center gap-4 border border-bone/80 px-8 py-4 text-xs uppercase tracking-[0.28em] text-bone transition-all hover:bg-bone hover:text-wine"
+              className="mt-12 inline-flex items-center gap-4 border border-bone/80 px-8 py-4 text-xs uppercase tracking-[0.28em] text-bone transition-all hover:bg-bone hover:text-sage-deep"
             >
               Request an introduction
             </a>
