@@ -3,7 +3,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { InquirySection } from "@/components/InquirySection";
 
 import diningStill from "@/assets/dining-still.jpg";
-import diningRoom from "@/assets/dining-room.jpg";
+import revenueGathering from "@/assets/revenue-gathering.jpg";
 import gardenPath from "@/assets/garden-path.jpg";
 
 export const Route = createFileRoute("/investment")({
@@ -116,8 +116,9 @@ function InvestmentPage() {
               </h2>
               <div className="mt-10 overflow-hidden border border-rule/40">
                 <img
-                  src={diningRoom}
-                  alt="Dining room with chinoiserie murals"
+                  src={revenueGathering}
+                  alt="Sophisticated women blending business and leisure in a modern-classic luxury salon"
+                  loading="lazy"
                   className="aspect-[4/3] h-full w-full object-cover"
                 />
               </div>
