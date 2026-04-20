@@ -41,6 +41,8 @@
   --color-wine: var(--wine);
   --color-wine-deep: var(--wine-deep);
   --color-terracotta: var(--terracotta);
+  --color-sage: var(--sage);
+  --color-sage-deep: var(--sage-deep);
   --color-parchment: var(--parchment);
   --color-rule: var(--rule);
 
@@ -59,6 +61,8 @@
   --wine: oklch(0.32 0.105 18);           /* #5C1A24 — deep bordeaux */
   --wine-deep: oklch(0.255 0.09 18);      /* darker wine */
   --terracotta: oklch(0.585 0.105 38);    /* #B8654A — soft terracotta */
+  --sage: oklch(0.78 0.075 140);          /* #9DC287 — soft sage green */
+  --sage-deep: oklch(0.66 0.085 140);     /* deeper sage for contrast */
   --rule: oklch(0.78 0.025 60);           /* hairline divider */
 
   --background: var(--bone);
