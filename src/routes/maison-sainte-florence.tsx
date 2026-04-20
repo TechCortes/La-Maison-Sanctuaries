@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FadeIn } from "@/components/FadeIn";
 
-import sfLogo from "@/assets/sf-logo.png";
+
 import exterior from "@/assets/exterior-doors.jpg";
 import map from "@/assets/bordeaux-map.jpg";
 import floorplan from "@/assets/floorplan.jpg";
