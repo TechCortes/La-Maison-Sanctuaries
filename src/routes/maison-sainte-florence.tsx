@@ -4,12 +4,6 @@ import { FadeIn } from "@/components/FadeIn";
 
 import exterior from "@/assets/exterior-doors.jpg";
 import map from "@/assets/bordeaux-map.jpg";
-import floorplan from "@/assets/floorplan.jpg";
-import staircase from "@/assets/staircase.jpg";
-import courtyard from "@/assets/courtyard.jpg";
-import bedroom from "@/assets/bedroom.jpg";
-import diningRoom from "@/assets/dining-room.jpg";
-import diningStill from "@/assets/dining-still.jpg";
 
 export const Route = createFileRoute("/maison-sainte-florence")({
   head: () => ({
