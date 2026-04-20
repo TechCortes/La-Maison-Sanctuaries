@@ -355,7 +355,7 @@ function LandingPage() {
             <p className="eyebrow">The Principals</p>
             <h2 className="mt-6 max-w-2xl font-display text-5xl leading-[1.05] text-ink md:text-6xl">
               Three voices,
-              <em className="italic text-wine"> one Maison.</em>
+              <em className="italic text-wine"> one global vision.</em>
             </h2>
           </FadeIn>
           <div className="mt-16 grid gap-10 md:grid-cols-3">
