@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import markWine from "@/assets/la-maison-mark-wine.png";
 
 const principals = [
   {
@@ -22,6 +23,11 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10">
         <div className="grid gap-12 md:grid-cols-[1.2fr_2fr]">
           <div>
+            <img
+              src={markWine}
+              alt="La Maison house mark"
+              className="mb-5 h-20 w-auto opacity-85"
+            />
             <p className="font-display text-3xl text-wine">La Maison</p>
             <p className="mt-3 text-sm text-ink/60">
               Private Design Sanctuaries.

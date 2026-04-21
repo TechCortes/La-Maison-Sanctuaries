@@ -15,6 +15,8 @@ import uk from "@/assets/uk.jpg";
 import hamptons from "@/assets/hamptons.jpg";
 import caribbean from "@/assets/caribbean.jpg";
 import foundersBg from "@/assets/founders-bg.jpg";
+import markBone from "@/assets/la-maison-mark-bone.png";
+import markWine from "@/assets/la-maison-mark-wine.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -102,6 +104,12 @@ function LandingPage() {
             transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-3xl"
           >
+            <img
+              src={markBone}
+              alt=""
+              aria-hidden
+              className="mb-8 h-20 w-auto opacity-70 md:h-24"
+            />
             <p className="text-[0.72rem] uppercase tracking-[0.42em] text-bone/70">
               Maison · Sainte-Florence · Bordeaux
             </p>
@@ -357,6 +365,12 @@ function LandingPage() {
         <div className="absolute inset-0 hidden bg-gradient-to-r from-bone via-bone/95 to-bone/30 md:block" />
         <div className="relative mx-auto max-w-[1400px] px-6 md:px-10">
           <FadeIn>
+            <img
+              src={markWine}
+              alt=""
+              aria-hidden
+              className="mb-8 h-16 w-auto opacity-40"
+            />
             <p className="eyebrow">The Principals</p>
             <h2 className="mt-6 max-w-2xl font-display text-5xl leading-[1.05] text-ink md:text-6xl">
               Three voices,
