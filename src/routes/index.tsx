@@ -365,6 +365,12 @@ function LandingPage() {
         <div className="absolute inset-0 hidden bg-gradient-to-r from-bone via-bone/95 to-bone/30 md:block" />
         <div className="relative mx-auto max-w-[1400px] px-6 md:px-10">
           <FadeIn>
+            <img
+              src={markWine}
+              alt=""
+              aria-hidden
+              className="mb-8 h-16 w-auto opacity-40"
+            />
             <p className="eyebrow">The Principals</p>
             <h2 className="mt-6 max-w-2xl font-display text-5xl leading-[1.05] text-ink md:text-6xl">
               Three voices,

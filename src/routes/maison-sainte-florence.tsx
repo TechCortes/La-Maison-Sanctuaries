@@ -4,6 +4,8 @@ import { FadeIn } from "@/components/FadeIn";
 
 import exterior from "@/assets/exterior-doors.jpg";
 import map from "@/assets/bordeaux-map.jpg";
+import seal from "@/assets/la-maison-seal.png";
+import markBone from "@/assets/la-maison-mark-bone.png";
 
 export const Route = createFileRoute("/maison-sainte-florence")({
   head: () => ({
@@ -36,6 +38,11 @@ function FlagshipPage() {
       <section className="py-28 md:py-36">
         <div className="mx-auto grid max-w-[1400px] gap-16 px-6 md:grid-cols-[1fr_1.5fr] md:gap-24 md:px-10">
           <FadeIn>
+            <img
+              src={seal}
+              alt="La Maison crest — engraved façade of the flagship house"
+              className="mb-10 w-full max-w-[280px]"
+            />
             <p className="eyebrow font-display text-4xl normal-case tracking-tight text-wine md:text-6xl lg:text-7xl">
               A Private Members' Experience
             </p>
@@ -97,6 +104,12 @@ function FlagshipPage() {
       <section className="bg-sage-deep py-28 text-bone md:py-36">
         <div className="mx-auto max-w-[1400px] px-6 text-center md:px-10">
           <FadeIn>
+            <img
+              src={markBone}
+              alt=""
+              aria-hidden
+              className="mx-auto mb-10 h-24 w-auto opacity-80 md:h-28"
+            />
             <p className="text-[0.7rem] uppercase tracking-[0.32em] text-bone/80">
               By appointment only
             </p>
