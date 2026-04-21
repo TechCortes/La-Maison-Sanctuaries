@@ -1,6 +1,7 @@
 import { Link, useRouter } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import markWine from "@/assets/la-maison-mark-wine.png";
 
 const nav = [
   { to: "/", label: "Concept" },
@@ -36,6 +37,12 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 md:px-10 md:py-5">
         <Link to="/" className="group flex items-center gap-3">
+          <img
+            src={markWine}
+            alt=""
+            aria-hidden
+            className="h-9 w-auto opacity-90 transition-opacity group-hover:opacity-100 md:h-11"
+          />
           <span className="font-display text-2xl leading-none tracking-tight text-wine">
             La Maison
           </span>
