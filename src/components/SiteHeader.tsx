@@ -41,7 +41,7 @@ export function SiteHeader() {
             src={markWine}
             alt=""
             aria-hidden
-            className="h-24 w-auto opacity-90 transition-opacity group-hover:opacity-100 md:h-36"
+            className="h-48 w-auto opacity-90 transition-opacity group-hover:opacity-100 md:h-72"
           />
           <span className="font-display text-2xl leading-none tracking-tight text-wine">
             La Maison
