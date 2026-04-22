@@ -182,7 +182,7 @@ function LandingPage() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={conceptGathering}
-                  alt="Elegant modern clubhouse lounge with travertine fireplace, bouclé sofas, and sculptural brass lighting"
+                  alt="Two women in evening gowns seated on a damask sofa within a candlelit Italian salon"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
