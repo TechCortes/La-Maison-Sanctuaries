@@ -36,7 +36,7 @@ function FlagshipPage() {
   return (
     <div className="bg-bone text-ink">
       {/* HERO IMAGE */}
-      <section className="relative w-full overflow-hidden bg-wine">
+      <section className="relative w-full overflow-hidden bg-bone">
         <div className="relative h-[80svh] min-h-[520px] w-full md:h-auto md:min-h-0">
           <img
             src={flagshipStairs}
