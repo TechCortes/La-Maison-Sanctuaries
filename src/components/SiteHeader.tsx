@@ -37,11 +37,26 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 md:px-10 md:py-5">
         <Link to="/" className="group flex items-center gap-4">
-          <span className="font-display text-2xl leading-none tracking-tight text-wine">
+          <span
+            className={cn(
+              "font-display text-2xl leading-none tracking-tight transition-colors",
+              scrolled ? "text-wine" : "text-white",
+            )}
+          >
             La Maison
           </span>
-          <span className="hairline hidden h-px w-8 bg-wine/40 md:block" />
-          <span className="hidden text-[0.62rem] font-medium uppercase tracking-[0.32em] text-ink/60 md:block">
+          <span
+            className={cn(
+              "hairline hidden h-px w-8 transition-colors md:block",
+              scrolled ? "bg-wine/40" : "bg-white/50",
+            )}
+          />
+          <span
+            className={cn(
+              "hidden text-[0.62rem] font-medium uppercase tracking-[0.32em] transition-colors md:block",
+              scrolled ? "text-ink/60" : "text-white/80",
+            )}
+          >
             Private Design Sanctuaries
           </span>
         </Link>
@@ -51,17 +66,32 @@ export function SiteHeader() {
             <Link
               key={item.to}
               to={item.to}
-              className="group relative text-[0.78rem] font-medium uppercase tracking-[0.22em] text-ink/70 transition-colors hover:text-wine"
-              activeProps={{ className: "text-wine" }}
+              className={cn(
+                "group relative text-[0.78rem] font-medium uppercase tracking-[0.22em] transition-colors",
+                scrolled
+                  ? "text-ink/70 hover:text-wine"
+                  : "text-white hover:text-white/80",
+              )}
+              activeProps={{ className: scrolled ? "text-wine" : "text-white" }}
               activeOptions={{ exact: true }}
             >
               {item.label}
-              <span className="absolute -bottom-1.5 left-0 h-px w-0 bg-wine transition-all duration-500 group-hover:w-full" />
+              <span
+                className={cn(
+                  "absolute -bottom-1.5 left-0 h-px w-0 transition-all duration-500 group-hover:w-full",
+                  scrolled ? "bg-wine" : "bg-white",
+                )}
+              />
             </Link>
           ))}
           <a
             href="#inquire"
-            className="rounded-none border border-wine px-5 py-2.5 text-[0.72rem] font-medium uppercase tracking-[0.24em] text-wine transition-all hover:bg-wine hover:text-bone"
+            className={cn(
+              "rounded-none border px-5 py-2.5 text-[0.72rem] font-medium uppercase tracking-[0.24em] transition-all",
+              scrolled
+                ? "border-wine text-wine hover:bg-wine hover:text-bone"
+                : "border-white text-white hover:bg-white hover:text-wine",
+            )}
           >
             Inquire
           </a>
