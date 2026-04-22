@@ -4,7 +4,7 @@ import { FadeIn } from "@/components/FadeIn";
 
 import exterior from "@/assets/exterior-doors.jpg";
 import map from "@/assets/bordeaux-map.jpg";
-import seal from "@/assets/la-maison-seal.png";
+
 
 
 export const Route = createFileRoute("/maison-sainte-florence")({
@@ -38,11 +38,6 @@ function FlagshipPage() {
       <section className="py-28 md:py-36">
         <div className="mx-auto grid max-w-[1400px] gap-16 px-6 md:grid-cols-[1fr_1.5fr] md:gap-24 md:px-10">
           <FadeIn>
-            <img
-              src={seal}
-              alt="La Maison crest — engraved façade of the flagship house"
-              className="mb-10 w-full max-w-[280px]"
-            />
             <p className="eyebrow font-display text-4xl normal-case tracking-tight text-wine md:text-6xl lg:text-7xl">
               A Private Members' Experience
             </p>
