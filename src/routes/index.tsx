@@ -140,7 +140,7 @@ function LandingPage() {
             <img
               src={laMaisonLogo}
               alt="La Maison emblem"
-              className="order-first h-16 w-auto justify-self-start md:order-none md:h-28 md:justify-self-end lg:h-32"
+              className="order-first h-24 w-auto justify-self-start md:order-none md:h-40 md:justify-self-end lg:h-44"
             />
           </motion.div>
         </div>
