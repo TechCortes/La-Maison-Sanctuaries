@@ -6,7 +6,7 @@ import { InquirySection } from "@/components/InquirySection";
 import lmLogo from "@/assets/lm-logo.jpg";
 import hallway from "@/assets/hallway.jpg";
 import interiorTapestry from "@/assets/interior-tapestry.jpg";
-import conceptGathering from "@/assets/concept-gathering.jpg";
+import conceptGathering from "@/assets/concept-salon.jpg";
 import diningRoom from "@/assets/dining-room.jpg";
 import diningStill from "@/assets/dining-still.jpg";
 import courtyard from "@/assets/courtyard.jpg";
@@ -182,7 +182,7 @@ function LandingPage() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={conceptGathering}
-                  alt="Elegant modern clubhouse lounge with travertine fireplace, bouclé sofas, and sculptural brass lighting"
+                  alt="Two women in evening gowns seated on a damask sofa within a candlelit Italian salon"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
