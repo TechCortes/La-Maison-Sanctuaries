@@ -6,7 +6,7 @@ import { InquirySection } from "@/components/InquirySection";
 import lmLogo from "@/assets/lm-logo.jpg";
 import hallway from "@/assets/hallway.jpg";
 import interiorTapestry from "@/assets/interior-tapestry.jpg";
-import conceptGathering from "@/assets/concept-salon.jpg";
+import conceptGathering from "@/assets/concept-garden.jpg";
 import diningRoom from "@/assets/maison-sainte-florence-bar.jpg";
 import diningStill from "@/assets/dining-still.jpg";
 import courtyard from "@/assets/courtyard.jpg";
@@ -184,7 +184,7 @@ function LandingPage() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={conceptGathering}
-                  alt="Two women in evening gowns seated on a damask sofa within a candlelit Italian salon"
+                  alt="Elegant guests gathered in a manicured English garden with the La Maison emblem above"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
