@@ -1,7 +1,7 @@
 import { Link, useRouter } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import markWine from "@/assets/la-maison-mark-wine.png";
+import laMaisonLogo from "@/assets/la-maison-logo.jpg";
 
 const nav = [
   { to: "/", label: "Concept" },
@@ -36,16 +36,12 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 md:px-10 md:py-5">
-        <Link to="/" className="group flex items-center gap-3">
+        <Link to="/" className="group flex items-center gap-4">
           <img
-            src={markWine}
-            alt=""
-            aria-hidden
-            className="h-[36rem] w-auto opacity-90 transition-opacity group-hover:opacity-100 md:h-[54rem]"
+            src={laMaisonLogo}
+            alt="La Maison"
+            className="h-16 w-auto transition-opacity group-hover:opacity-90 md:h-20"
           />
-          <span className="font-display text-2xl leading-none tracking-tight text-wine">
-            La Maison
-          </span>
           <span className="hairline hidden h-px w-8 bg-wine/40 md:block" />
           <span className="hidden text-[0.62rem] font-medium uppercase tracking-[0.32em] text-ink/60 md:block">
             Private Design Sanctuaries
