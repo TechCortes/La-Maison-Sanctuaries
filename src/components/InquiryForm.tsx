@@ -25,7 +25,7 @@ const schema = z.object({
 
 type FormValues = z.infer<typeof schema>;
 
-const recipients = "Holly-Mae@postproj.com";
+const recipients = "info@postproj.com";
 
 export function InquiryForm() {
   const [submitting, setSubmitting] = useState(false);
