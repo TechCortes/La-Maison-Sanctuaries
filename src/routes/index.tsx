@@ -103,13 +103,8 @@ function LandingPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-            className="grid max-w-5xl items-center gap-10 md:grid-cols-[auto_1fr] md:gap-14"
+            className="grid max-w-5xl items-center gap-10 md:grid-cols-[1fr_auto] md:gap-14"
           >
-            <img
-              src={laMaisonLogo}
-              alt="La Maison emblem"
-              className="h-12 w-auto md:h-20 lg:h-24"
-            />
             <div>
               <p className="text-[0.72rem] uppercase tracking-[0.42em] text-bone/70">
                 Maison · Sainte-Florence · Bordeaux
@@ -142,6 +137,11 @@ function LandingPage() {
                 </Link>
               </div>
             </div>
+            <img
+              src={laMaisonLogo}
+              alt="La Maison emblem"
+              className="order-first h-16 w-auto justify-self-start md:order-none md:h-28 md:justify-self-end lg:h-32"
+            />
           </motion.div>
         </div>
 
