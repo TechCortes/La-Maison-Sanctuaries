@@ -6,7 +6,7 @@ import { InquirySection } from "@/components/InquirySection";
 import lmLogo from "@/assets/lm-logo.jpg";
 import hallway from "@/assets/hallway.jpg";
 import interiorTapestry from "@/assets/interior-tapestry.jpg";
-import conceptGathering from "@/assets/concept-gathering.jpg";
+import conceptGathering from "@/assets/concept-salon.jpg";
 import diningRoom from "@/assets/dining-room.jpg";
 import diningStill from "@/assets/dining-still.jpg";
 import courtyard from "@/assets/courtyard.jpg";
