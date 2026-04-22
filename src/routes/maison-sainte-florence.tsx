@@ -4,6 +4,7 @@ import { FadeIn } from "@/components/FadeIn";
 
 import exterior from "@/assets/exterior-doors.jpg";
 import map from "@/assets/bordeaux-map.jpg";
+import flagshipStairs from "@/assets/flagship-stairs.jpg";
 
 
 
@@ -34,6 +35,16 @@ export const Route = createFileRoute("/maison-sainte-florence")({
 function FlagshipPage() {
   return (
     <div className="bg-bone text-ink">
+      {/* HERO IMAGE */}
+      <section className="relative h-[80svh] min-h-[520px] w-full overflow-hidden md:h-[92svh]">
+        <img
+          src={flagshipStairs}
+          alt="Guests in formal attire descending a stone staircase outside Maison Sainte-Florence"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bone" />
+      </section>
+
       {/* INTRO */}
       <section className="py-28 md:py-36">
         <div className="mx-auto grid max-w-[1400px] gap-16 px-6 md:grid-cols-[1fr_1.5fr] md:gap-24 md:px-10">
