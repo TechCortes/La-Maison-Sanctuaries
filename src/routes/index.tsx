@@ -7,7 +7,7 @@ import lmLogo from "@/assets/lm-logo.jpg";
 import hallway from "@/assets/hallway.jpg";
 import interiorTapestry from "@/assets/interior-tapestry.jpg";
 import conceptGathering from "@/assets/concept-salon.jpg";
-import diningRoom from "@/assets/dining-room.jpg";
+import diningRoom from "@/assets/maison-sainte-florence-bar.jpg";
 import diningStill from "@/assets/dining-still.jpg";
 import courtyard from "@/assets/courtyard.jpg";
 import italy from "@/assets/italy.jpg";
@@ -228,7 +228,7 @@ function LandingPage() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={diningRoom}
-                  alt="Hand-painted chinoiserie dining room at Maison Sainte-Florence"
+                  alt="Teal-lacquered bar room at Maison Sainte-Florence with marble-topped island, candelabra, and gilt portrait"
                   className="h-full w-full object-cover"
                 />
               </div>
