@@ -36,13 +36,15 @@ function FlagshipPage() {
   return (
     <div className="bg-bone text-ink">
       {/* HERO IMAGE */}
-      <section className="relative h-[80svh] min-h-[520px] w-full overflow-hidden md:h-[92svh]">
-        <img
-          src={flagshipStairs}
-          alt="Guests in formal attire descending a stone staircase outside Maison Sainte-Florence"
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bone" />
+      <section className="relative w-full overflow-hidden bg-wine">
+        <div className="relative h-[80svh] min-h-[520px] w-full md:h-auto md:min-h-0">
+          <img
+            src={flagshipStairs}
+            alt="Guests in formal attire descending a stone staircase outside Maison Sainte-Florence"
+            className="h-full w-full object-cover object-[center_30%] md:h-auto md:max-h-[92vh] md:w-full md:object-contain"
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-bone md:h-24" />
       </section>
 
       {/* INTRO */}
