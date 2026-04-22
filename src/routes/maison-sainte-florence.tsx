@@ -5,7 +5,7 @@ import { FadeIn } from "@/components/FadeIn";
 import exterior from "@/assets/exterior-doors.jpg";
 import map from "@/assets/bordeaux-map.jpg";
 import seal from "@/assets/la-maison-seal.png";
-import markBone from "@/assets/la-maison-mark-bone.png";
+
 
 export const Route = createFileRoute("/maison-sainte-florence")({
   head: () => ({
@@ -104,12 +104,6 @@ function FlagshipPage() {
       <section className="bg-sage-deep py-28 text-bone md:py-36">
         <div className="mx-auto max-w-[1400px] px-6 text-center md:px-10">
           <FadeIn>
-            <img
-              src={markBone}
-              alt=""
-              aria-hidden
-              className="mx-auto mb-10 h-24 w-auto opacity-80 md:h-28"
-            />
             <p className="text-[0.7rem] uppercase tracking-[0.32em] text-bone/80">
               By appointment only
             </p>
