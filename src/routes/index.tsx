@@ -17,6 +17,7 @@ import caribbean from "@/assets/caribbean.jpg";
 import foundersBg from "@/assets/founders-bg.jpg";
 import markBone from "@/assets/la-maison-mark-bone.png";
 import markWine from "@/assets/la-maison-mark-wine.png";
+import laMaisonLogo from "@/assets/la-maison-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -102,37 +103,44 @@ function LandingPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-            className="max-w-3xl"
+            className="grid max-w-5xl items-center gap-10 md:grid-cols-[auto_1fr] md:gap-14"
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.42em] text-bone/70">
-              Maison · Sainte-Florence · Bordeaux
-            </p>
-            <h1 className="mt-8 font-display text-[clamp(3rem,9vw,7.5rem)] leading-[0.95] text-bone">
-              La Maison.
-              <br />
-              <em className="font-light italic text-bone/85">
-                Private design sanctuaries.
-              </em>
-            </h1>
-            <p className="mt-10 max-w-xl text-lg leading-relaxed text-bone/80">
-              A one-to-one design sanctuary where deeply private interiors
-              double as living showrooms — curated for those who value trust,
-              authorship, and considered luxury.
-            </p>
-            <div className="mt-14 flex flex-wrap items-center gap-8">
-              <a
-                href="#inquire"
-                className="group inline-flex items-center gap-4 border border-bone/80 px-8 py-4 text-xs uppercase tracking-[0.28em] text-bone transition-all hover:bg-bone hover:text-wine"
-              >
-                Request Introduction
-                <span className="inline-block h-px w-6 bg-bone transition-all group-hover:w-12 group-hover:bg-wine" />
-              </a>
-              <Link
-                to="/maison-sainte-florence"
-                className="text-xs uppercase tracking-[0.28em] text-bone/70 underline-offset-8 hover:text-bone hover:underline"
-              >
-                Visit the Flagship →
-              </Link>
+            <img
+              src={laMaisonLogo}
+              alt="La Maison emblem"
+              className="h-40 w-auto md:h-64 lg:h-72"
+            />
+            <div>
+              <p className="text-[0.72rem] uppercase tracking-[0.42em] text-bone/70">
+                Maison · Sainte-Florence · Bordeaux
+              </p>
+              <h1 className="mt-8 font-display text-[clamp(3rem,9vw,7.5rem)] leading-[0.95] text-bone">
+                La Maison.
+                <br />
+                <em className="font-light italic text-bone/85">
+                  Private design sanctuaries.
+                </em>
+              </h1>
+              <p className="mt-10 max-w-xl text-lg leading-relaxed text-bone/80">
+                A one-to-one design sanctuary where deeply private interiors
+                double as living showrooms — curated for those who value trust,
+                authorship, and considered luxury.
+              </p>
+              <div className="mt-14 flex flex-wrap items-center gap-8">
+                <a
+                  href="#inquire"
+                  className="group inline-flex items-center gap-4 border border-bone/80 px-8 py-4 text-xs uppercase tracking-[0.28em] text-bone transition-all hover:bg-bone hover:text-wine"
+                >
+                  Request Introduction
+                  <span className="inline-block h-px w-6 bg-bone transition-all group-hover:w-12 group-hover:bg-wine" />
+                </a>
+                <Link
+                  to="/maison-sainte-florence"
+                  className="text-xs uppercase tracking-[0.28em] text-bone/70 underline-offset-8 hover:text-bone hover:underline"
+                >
+                  Visit the Flagship →
+                </Link>
+              </div>
             </div>
           </motion.div>
         </div>
