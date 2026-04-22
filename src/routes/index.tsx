@@ -104,12 +104,6 @@ function LandingPage() {
             transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
             className="max-w-3xl"
           >
-            <img
-              src={markBone}
-              alt=""
-              aria-hidden
-              className="mb-8 h-20 w-auto opacity-70 md:h-24"
-            />
             <p className="text-[0.72rem] uppercase tracking-[0.42em] text-bone/70">
               Maison · Sainte-Florence · Bordeaux
             </p>
