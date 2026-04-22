@@ -108,7 +108,7 @@ function LandingPage() {
             <img
               src={laMaisonLogo}
               alt="La Maison emblem"
-              className="h-40 w-auto md:h-64 lg:h-72"
+              className="h-12 w-auto md:h-20 lg:h-24"
             />
             <div>
               <p className="text-[0.72rem] uppercase tracking-[0.42em] text-bone/70">
