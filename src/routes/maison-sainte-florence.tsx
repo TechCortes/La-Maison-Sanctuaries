@@ -38,19 +38,19 @@ function FlagshipPage() {
     <div className="bg-bone text-ink">
       {/* HERO IMAGE */}
       <section className="relative w-full overflow-hidden bg-bone">
-        <div className="relative h-[80svh] min-h-[520px] w-full md:h-auto md:min-h-0">
+        <div className="relative mx-auto h-[80svh] min-h-[520px] w-full md:h-auto md:min-h-0 md:w-fit">
           <img
             src={flagshipStairs}
             alt="Guests in formal attire descending a stone staircase outside Maison Sainte-Florence"
-            className="h-full w-full object-cover object-[center_30%] md:h-auto md:max-h-[92vh] md:w-full md:object-contain"
+            className="block h-full w-full object-cover object-[center_30%] md:h-auto md:max-h-[92vh] md:w-auto md:object-contain"
           />
 
-          {/* La Maison emblem — anchored over the ivy on the right */}
-          <div className="pointer-events-none absolute right-6 top-8 flex md:right-16 md:top-14 lg:right-24 lg:top-20">
+          {/* La Maison emblem — anchored over the ivy in the upper-right of the image */}
+          <div className="pointer-events-none absolute right-[8%] top-[6%] flex">
             <img
               src={laMaisonMark}
               alt="La Maison emblem"
-              className="h-20 w-auto object-contain drop-shadow-[0_4px_20px_rgba(0,0,0,0.35)] md:h-28 lg:h-32"
+              className="h-20 w-auto object-contain drop-shadow-[0_4px_20px_rgba(0,0,0,0.45)] md:h-28 lg:h-36"
             />
           </div>
         </div>
