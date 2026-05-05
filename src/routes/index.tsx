@@ -88,10 +88,10 @@ function LandingPage() {
   return (
     <div>
       {/* HERO — Editorial Split */}
-      <section className="relative min-h-[100svh] overflow-hidden bg-bone">
+      <section className="relative min-h-[100svh] overflow-hidden bg-parchment">
         <div className="grid min-h-[100svh] md:grid-cols-[1.05fr_1fr]">
           {/* LEFT — typography column */}
-          <div className="relative flex items-center px-6 pb-20 pt-32 md:px-14 md:pt-40 lg:px-20">
+          <div className="relative flex items-center bg-parchment px-6 pb-20 pt-32 md:px-14 md:pt-40 lg:px-20">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
