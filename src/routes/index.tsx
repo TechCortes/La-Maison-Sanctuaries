@@ -177,6 +177,8 @@ function LandingPage() {
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-ink/20" />
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_45%,_rgba(0,0,0,0.35)_100%)]" />
         </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* CONCEPT */}
