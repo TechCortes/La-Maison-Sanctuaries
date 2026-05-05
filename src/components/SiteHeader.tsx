@@ -36,28 +36,45 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 md:px-10 md:py-5">
-        <Link to="/" className="group flex items-center gap-4">
+        <Link to="/" className="group flex items-center gap-5">
           <span
             className={cn(
-              "font-display text-2xl leading-none tracking-tight transition-colors",
-              scrolled ? "text-wine" : "text-white",
+              "flex h-11 w-11 items-center justify-center border transition-colors",
+              scrolled
+                ? "border-wine/70 text-wine"
+                : "border-white/80 text-white",
             )}
+            aria-hidden
           >
-            La Maison
+            <span className="font-display text-[1.05rem] italic leading-none tracking-[0.04em]">
+              LM
+            </span>
           </span>
-          <span
-            className={cn(
-              "hairline hidden h-px w-8 transition-colors md:block",
-              scrolled ? "bg-wine/40" : "bg-white/50",
-            )}
-          />
-          <span
-            className={cn(
-              "hidden text-[0.62rem] font-medium uppercase tracking-[0.32em] transition-colors md:block",
-              scrolled ? "text-ink/60" : "text-white/80",
-            )}
-          >
-            Private Design Sanctuaries
+          <span className="flex flex-col gap-1.5">
+            <span
+              className={cn(
+                "font-display text-[1.35rem] leading-none tracking-[0.04em] transition-colors",
+                scrolled ? "text-wine" : "text-white",
+              )}
+            >
+              La Maison
+            </span>
+            <span className="hidden items-center gap-3 md:flex">
+              <span
+                className={cn(
+                  "h-px w-6 transition-colors",
+                  scrolled ? "bg-wine/40" : "bg-white/50",
+                )}
+              />
+              <span
+                className={cn(
+                  "text-[0.6rem] font-medium uppercase tracking-[0.36em] transition-colors",
+                  scrolled ? "text-ink/60" : "text-white/80",
+                )}
+              >
+                Private Design Sanctuaries
+              </span>
+            </span>
           </span>
         </Link>
 
