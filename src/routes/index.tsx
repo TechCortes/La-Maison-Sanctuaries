@@ -17,7 +17,7 @@ import caribbean from "@/assets/caribbean.jpg";
 import foundersBg from "@/assets/founders-bg.jpg";
 import markBone from "@/assets/la-maison-mark-bone.png";
 import markWine from "@/assets/la-maison-mark-wine.png";
-import laMaisonLogo from "@/assets/la-maison-logo.png";
+import laMaisonLogo from "@/assets/la-maison-mark-wine.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
