@@ -44,6 +44,15 @@ function FlagshipPage() {
             alt="Guests in formal attire descending a stone staircase outside Maison Sainte-Florence"
             className="h-full w-full object-cover object-[center_30%] md:h-auto md:max-h-[92vh] md:w-full md:object-contain"
           />
+
+          {/* La Maison emblem — centered masthead overlay */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 flex justify-center px-6 pt-10 md:pt-14 lg:pt-20">
+            <img
+              src={laMaisonMark}
+              alt="La Maison emblem"
+              className="h-20 w-auto object-contain drop-shadow-[0_4px_20px_rgba(0,0,0,0.35)] md:h-28 lg:h-32"
+            />
+          </div>
         </div>
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-bone md:h-24" />
       </section>
