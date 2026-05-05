@@ -37,23 +37,10 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 md:px-10 md:py-5">
         <Link to="/" className="group flex items-center gap-5">
-          <span
-            className={cn(
-              "flex h-11 w-11 items-center justify-center border transition-colors",
-              scrolled
-                ? "border-wine/70 text-wine"
-                : "border-white/80 text-white",
-            )}
-            aria-hidden
-          >
-            <span className="font-display text-[1.05rem] italic leading-none tracking-[0.04em]">
-              LM
-            </span>
-          </span>
           <span className="flex flex-col gap-1.5">
             <span
               className={cn(
-                "font-display text-[1.35rem] leading-none tracking-[0.04em] transition-colors",
+                "font-display text-[1.5rem] leading-none tracking-[0.04em] transition-colors",
                 scrolled ? "text-wine" : "text-white",
               )}
             >
