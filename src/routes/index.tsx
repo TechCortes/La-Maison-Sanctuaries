@@ -44,28 +44,28 @@ export const Route = createFileRoute("/")({
 const pillars = [
   {
     n: "01",
-    title: "Design & Art of Living",
-    body: "Curated interiors authored by master designers, conceived as authored environments rather than catalogs.",
+    title: "Design & the Art of Living",
+    body: "Interiors thoughtfully curated by master designers, conceived as complete living environments rather than a collection of pieces.",
   },
   {
     n: "02",
     title: "Experiential Luxury",
-    body: "Private dinners, atelier visits, and quietly orchestrated gatherings — luxury rendered as occasion.",
+    body: "Private dinners, atelier visits, and intimate gatherings — where luxury is felt through meaningful moments.",
   },
   {
     n: "03",
     title: "Wellness & Restoration",
-    body: "Bespoke programs of rest, treatment, and seasonal cuisine grounded in the rhythm of the land.",
+    body: "Personalized programs for rest and renewal, featuring treatments and seasonal cuisine aligned with the rhythms of the land.",
   },
   {
     n: "04",
     title: "The Living Showroom",
-    body: "Every object, fabric, and finish is acquirable — the Maison itself is the sample book.",
+    body: "Every object, fabric, and finish is available for acquisition; each home serves as a fully realized expression of its design.",
   },
   {
     n: "05",
     title: "Sustainability",
-    body: "Restoration over replacement. Provenance over novelty. A long view of the houses we keep.",
+    body: "A philosophy centered on restoration over replacement, provenance over novelty, and a long-term view of the spaces we inhabit.",
   },
 ];
 
