@@ -41,7 +41,7 @@ export function SiteHeader() {
             <span
               className={cn(
                 "font-display text-[1.5rem] leading-none tracking-[0.04em] transition-colors",
-                scrolled ? "text-wine" : "text-white",
+                scrolled ? "text-wine" : "text-wine",
               )}
             >
               La Maison
@@ -50,13 +50,13 @@ export function SiteHeader() {
               <span
                 className={cn(
                   "h-px w-6 transition-colors",
-                  scrolled ? "bg-wine/40" : "bg-white/50",
+                  scrolled ? "bg-wine/40" : "bg-wine/40",
                 )}
               />
               <span
                 className={cn(
                   "text-[0.6rem] font-medium uppercase tracking-[0.36em] transition-colors",
-                  scrolled ? "text-ink/60" : "text-white/80",
+                  scrolled ? "text-ink/60" : "text-ink/65",
                 )}
               >
                 Private Design Sanctuaries
