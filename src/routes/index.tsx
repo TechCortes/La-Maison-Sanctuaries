@@ -10,6 +10,7 @@ import conceptGathering from "@/assets/concept-garden.jpg";
 import diningRoom from "@/assets/maison-sainte-florence-bar.jpg";
 import diningStill from "@/assets/dining-still.jpg";
 import courtyard from "@/assets/courtyard.jpg";
+import manorInterlude from "@/assets/manor-interlude.jpg";
 import italy from "@/assets/italy.jpg";
 import uk from "@/assets/uk.jpg";
 import hamptons from "@/assets/hamptons.jpg";
@@ -422,8 +423,8 @@ function LandingPage() {
       {/* COURTYARD INTERLUDE */}
       <section className="relative h-[80vh] overflow-hidden">
         <img
-          src={courtyard}
-          alt="An ivy-clad courtyard threshold leading into Maison Sainte-Florence"
+          src={manorInterlude}
+          alt="A stately English manor at golden hour, framed by lawns and ancient trees"
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-bone via-transparent to-transparent" />
