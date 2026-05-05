@@ -87,72 +87,94 @@ const founders = [
 function LandingPage() {
   return (
     <div>
-      {/* HERO */}
-      <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-wine">
-        <div className="absolute inset-0">
-          <img
-            src={hallway}
-            alt="A long corridor of hand-painted panels at La Maison"
-            className="h-full w-full object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-wine/70 via-wine/50 to-wine/90" />
-        </div>
+      {/* HERO — Editorial Split */}
+      <section className="relative min-h-[100svh] overflow-hidden bg-bone">
+        <div className="grid min-h-[100svh] md:grid-cols-[1.05fr_1fr]">
+          {/* LEFT — typography column */}
+          <div className="relative flex items-center px-6 pb-20 pt-32 md:px-14 md:pt-40 lg:px-20">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+              className="w-full max-w-xl"
+            >
+              {/* Wax-seal mark */}
+              <img
+                src={laMaisonLogo}
+                alt="La Maison emblem"
+                className="mb-10 h-16 w-16 object-contain opacity-90 md:h-20 md:w-20"
+              />
 
-        <div className="relative mx-auto w-full max-w-[1400px] px-6 py-32 md:px-10 md:py-48">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-            className="grid max-w-5xl items-center gap-10 md:grid-cols-[1fr_auto] md:gap-14"
-          >
-            <div>
-              <p className="text-[0.72rem] uppercase tracking-[0.42em] text-bone/70">
-                Maison · Sainte-Florence · Bordeaux
-              </p>
-              <h1 className="mt-8 font-display text-[clamp(3rem,9vw,7.5rem)] leading-[0.95] text-bone">
+              {/* Eyebrow */}
+              <div className="flex items-center gap-4">
+                <span className="h-px w-8 bg-wine/50" />
+                <p className="text-[0.68rem] font-medium uppercase tracking-[0.42em] text-ink/60">
+                  Maison · Sainte-Florence · Bordeaux
+                </p>
+              </div>
+
+              <h1 className="mt-10 font-display text-[clamp(2.75rem,7vw,6rem)] leading-[0.95] text-wine">
                 La Maison.
                 <br />
-                <em className="font-light italic text-bone/85">
-                  Private design sanctuaries.
+                <em className="font-light italic text-ink/85">
+                  Private design
+                  <br />
+                  sanctuaries.
                 </em>
               </h1>
-              <p className="mt-10 max-w-xl text-lg leading-relaxed text-bone/80">
+
+              <p className="mt-10 max-w-md text-base leading-relaxed text-ink/70 md:text-lg">
                 A one-to-one design sanctuary where deeply private interiors
                 double as living showrooms — curated for those who value trust,
                 authorship, and considered luxury.
               </p>
-              <div className="mt-14 flex flex-wrap items-center gap-8">
+
+              <div className="mt-12 flex flex-wrap items-center gap-8">
                 <a
                   href="#inquire"
-                  className="group inline-flex items-center gap-4 border border-bone/80 px-8 py-4 text-xs uppercase tracking-[0.28em] text-bone transition-all hover:bg-bone hover:text-wine"
+                  className="group inline-flex items-center gap-4 border border-wine bg-wine px-8 py-4 text-[0.7rem] uppercase tracking-[0.28em] text-bone transition-all hover:bg-transparent hover:text-wine"
                 >
                   Request Introduction
                   <span className="inline-block h-px w-6 bg-bone transition-all group-hover:w-12 group-hover:bg-wine" />
                 </a>
                 <Link
                   to="/maison-sainte-florence"
-                  className="text-xs uppercase tracking-[0.28em] text-bone/70 underline-offset-8 hover:text-bone hover:underline"
+                  className="text-[0.7rem] uppercase tracking-[0.28em] text-ink/60 underline-offset-8 hover:text-wine hover:underline"
                 >
                   Visit the Flagship →
                 </Link>
               </div>
-            </div>
+            </motion.div>
+
+            {/* Scroll cue */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.2, duration: 1.5 }}
+              className="absolute bottom-8 left-6 hidden items-center gap-3 md:flex md:left-14 lg:left-20"
+            >
+              <span className="h-px w-10 bg-ink/40" />
+              <span className="text-[0.6rem] uppercase tracking-[0.5em] text-ink/50">
+                Scroll
+              </span>
+            </motion.div>
+          </div>
+
+          {/* RIGHT — full-bleed image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 1.04 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
+            className="relative min-h-[60vh] md:min-h-full"
+          >
             <img
-              src={laMaisonLogo}
-              alt="La Maison emblem"
-              className="order-first mx-auto w-[11rem] justify-self-center md:order-none md:mx-0 md:w-[22rem] md:justify-self-end lg:w-[26rem]"
+              src={hallway}
+              alt="A long corridor of hand-painted panels at La Maison"
+              className="absolute inset-0 h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-bone/10" />
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center text-[0.62rem] uppercase tracking-[0.5em] text-bone/50"
-        >
-          Scroll
-        </motion.div>
       </section>
 
       {/* CONCEPT */}
