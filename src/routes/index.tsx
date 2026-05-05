@@ -17,7 +17,7 @@ import caribbean from "@/assets/caribbean.jpg";
 import foundersBg from "@/assets/founders-bg.jpg";
 import markBone from "@/assets/la-maison-mark-bone.png";
 import markWine from "@/assets/la-maison-mark-wine.png";
-import laMaisonLogo from "@/assets/la-maison-logo.png";
+import laMaisonLogo from "@/assets/la-maison-mark-wine.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -98,11 +98,11 @@ function LandingPage() {
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="w-full max-w-xl"
             >
-              {/* Wax-seal mark */}
+              {/* Maison mark — masthead */}
               <img
                 src={laMaisonLogo}
                 alt="La Maison emblem"
-                className="mb-10 h-16 w-16 object-contain opacity-90 md:h-20 md:w-20"
+                className="mb-12 h-32 w-auto object-contain md:h-40 lg:h-48"
               />
 
               {/* Eyebrow */}
