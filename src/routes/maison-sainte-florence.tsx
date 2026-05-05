@@ -5,6 +5,7 @@ import { FadeIn } from "@/components/FadeIn";
 import exterior from "@/assets/exterior-doors.jpg";
 import map from "@/assets/bordeaux-map.jpg";
 import flagshipStairs from "@/assets/flagship-stairs.jpg";
+import laMaisonMark from "@/assets/la-maison-mark-bone.png";
 
 
 
