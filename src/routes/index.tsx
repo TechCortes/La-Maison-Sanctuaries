@@ -10,6 +10,7 @@ import conceptGathering from "@/assets/concept-garden.jpg";
 import diningRoom from "@/assets/maison-sainte-florence-bar.jpg";
 import diningStill from "@/assets/dining-still.jpg";
 import courtyard from "@/assets/courtyard.jpg";
+import manorInterlude from "@/assets/manor-interlude.jpg";
 import italy from "@/assets/italy.jpg";
 import uk from "@/assets/uk.jpg";
 import hamptons from "@/assets/hamptons.jpg";
