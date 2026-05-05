@@ -172,7 +172,10 @@ function LandingPage() {
               alt="A long corridor of hand-painted panels at La Maison"
               className="absolute inset-0 h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-bone/10" />
+            {/* Soft vignette: deepens edges, keeps the center of the image clear */}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-bone" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-ink/20" />
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_45%,_rgba(0,0,0,0.35)_100%)]" />
           </motion.div>
         </div>
       </section>
