@@ -45,8 +45,8 @@ function FlagshipPage() {
             className="h-full w-full object-cover object-[center_30%] md:h-auto md:max-h-[92vh] md:w-full md:object-contain"
           />
 
-          {/* La Maison emblem — centered masthead overlay */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 flex justify-center px-6 pt-10 md:pt-14 lg:pt-20">
+          {/* La Maison emblem — anchored over the ivy on the right */}
+          <div className="pointer-events-none absolute right-6 top-8 flex md:right-16 md:top-14 lg:right-24 lg:top-20">
             <img
               src={laMaisonMark}
               alt="La Maison emblem"
