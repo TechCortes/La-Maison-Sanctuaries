@@ -38,11 +38,11 @@ function FlagshipPage() {
     <div className="bg-bone text-ink">
       {/* HERO IMAGE */}
       <section className="relative w-full overflow-hidden bg-bone">
-        <div className="relative mx-auto h-[80svh] min-h-[520px] w-full md:h-auto md:min-h-0 md:w-fit">
+        <div className="relative mx-auto h-[80svh] min-h-[520px] w-full md:h-[92vh]">
           <img
             src={flagshipLivingRoom}
             alt="An elegant, light-filled living room at Maison Sainte-Florence with green-walled interior, blue rug, and views to the grounds"
-            className="block h-full w-full object-cover object-[center_30%] md:h-auto md:max-h-[92vh] md:w-auto md:object-contain"
+            className="block h-full w-full object-cover object-[center_30%]"
           />
 
           {/* La Maison emblem — anchored over the ivy in the upper-right of the image */}
