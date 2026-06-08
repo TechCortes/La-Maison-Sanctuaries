@@ -12,7 +12,7 @@ const principals = [
   },
   {
     name: "Holly-Mae Post",
-    role: "Managing Partner & Membership",
+    role: "Co-Founder",
     email: "info@postproj.com",
   },
 ];
