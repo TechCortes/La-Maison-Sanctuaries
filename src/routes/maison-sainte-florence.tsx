@@ -42,7 +42,7 @@ function FlagshipPage() {
           <img
             src={flagshipLivingRoom}
             alt="An elegant, light-filled living room at Maison Sainte-Florence with green-walled interior, blue rug, and views to the grounds"
-            className="block h-full w-full object-cover object-[center_30%] md:h-auto md:max-h-[92vh] md:w-auto md:object-contain"
+            className="block h-full w-full object-cover object-[center_30%]"
           />
 
           {/* La Maison emblem — anchored over the ivy in the upper-right of the image */}
