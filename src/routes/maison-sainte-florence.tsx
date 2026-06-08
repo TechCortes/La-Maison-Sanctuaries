@@ -4,7 +4,7 @@ import { FadeIn } from "@/components/FadeIn";
 
 import exterior from "@/assets/exterior-doors.jpg";
 import map from "@/assets/bordeaux-map.jpg";
-import flagshipStairs from "@/assets/flagship-stairs.jpg";
+import flagshipLivingRoom from "@/assets/flagship-living-room.jpg";
 import laMaisonMark from "@/assets/la-maison-mark-bone.png";
 
 
@@ -40,8 +40,8 @@ function FlagshipPage() {
       <section className="relative w-full overflow-hidden bg-bone">
         <div className="relative mx-auto h-[80svh] min-h-[520px] w-full md:h-auto md:min-h-0 md:w-fit">
           <img
-            src={flagshipStairs}
-            alt="Guests in formal attire descending a stone staircase outside Maison Sainte-Florence"
+            src={flagshipLivingRoom}
+            alt="An elegant, light-filled living room at Maison Sainte-Florence with green-walled interior, blue rug, and views to the grounds"
             className="block h-full w-full object-cover object-[center_30%] md:h-auto md:max-h-[92vh] md:w-auto md:object-contain"
           />
 
