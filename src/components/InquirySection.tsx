@@ -3,6 +3,16 @@ import { InquiryForm } from "./InquiryForm";
 
 const principals = [
   {
+    name: "Lauren Lozano Ziol",
+    role: "Co-Founder",
+    email: "lauren@lozanojolasinteriors.com",
+  },
+  {
+    name: "Michelle Jolas",
+    role: "Co-Founder",
+    email: "michelle@lozanojolasinteriors.com",
+  },
+  {
     name: "Holly-Mae Post",
     role: "Managing Partner & Membership",
     email: "info@postproj.com",

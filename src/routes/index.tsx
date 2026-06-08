@@ -351,7 +351,7 @@ function LandingPage() {
           <FadeIn>
             <p className="eyebrow">Portfolio Pipeline</p>
             <h2 className="mt-6 max-w-xl font-display text-5xl leading-[1.05] text-ink md:text-6xl">
-              Houses
+              La Maison
               <em className="italic text-wine"> in waiting.</em>
             </h2>
           </FadeIn>
