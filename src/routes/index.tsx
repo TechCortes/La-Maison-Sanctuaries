@@ -8,7 +8,7 @@ import hallway from "@/assets/hallway.jpg";
 import interiorTapestry from "@/assets/interior-tapestry.jpg";
 import conceptGathering from "@/assets/interior-plans.jpg";
 import diningRoom from "@/assets/maison-sainte-florence-bar.jpg";
-import diningStill from "@/assets/revenue-gathering-v4.jpg";
+import diningStill from "@/assets/revenue-gathering-v5.jpg";
 import courtyard from "@/assets/courtyard.jpg";
 import manorInterlude from "@/assets/manor-interlude.jpg";
 import italy from "@/assets/italy.jpg";
