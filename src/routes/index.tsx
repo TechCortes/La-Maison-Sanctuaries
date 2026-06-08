@@ -356,26 +356,12 @@ function LandingPage() {
             </h2>
           </FadeIn>
 
-          <div className="mt-16 grid gap-8 md:grid-cols-2">
-            {[
-              { img: italy, label: "Italy" },
-              { img: uk, label: "United Kingdom" },
-              { img: hamptons, label: "United States" },
-              { img: caribbean, label: "The Caribbean" },
-            ].map((o, i) => (
-              <FadeIn key={o.label} delay={i * 0.1}>
-                <div className="group relative overflow-hidden">
-                  <div className="aspect-[16/10] overflow-hidden">
-                    <img
-                      src={o.img}
-                      alt={o.label}
-                      className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="border-t border-rule/40 py-5">
-                    <p className="font-display text-2xl text-ink">{o.label}</p>
-                  </div>
-                </div>
+          <div className="mt-16 flex flex-wrap gap-4">
+            {["Asia", "Caribbean", "Italy", "UAE", "UK", "US"].map((loc) => (
+              <FadeIn key={loc}>
+                <span className="inline-block border border-rule/60 px-8 py-4 font-display text-xl text-ink">
+                  {loc}
+                </span>
               </FadeIn>
             ))}
           </div>
