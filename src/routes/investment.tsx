@@ -3,7 +3,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { InquirySection } from "@/components/InquirySection";
 
 import diningStill from "@/assets/dining-still.jpg";
-import revenueGathering from "@/assets/revenue-gathering.jpg";
+import revenueGathering from "@/assets/investments-dining.jpg";
 import gardenPath from "@/assets/garden-path.jpg";
 
 export const Route = createFileRoute("/investment")({
